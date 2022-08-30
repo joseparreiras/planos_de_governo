@@ -30,7 +30,7 @@ def pdf_kwd(file):
 
 
 # List of Candidates to analyse
-candidates = ['soraya', 'simone', 'lula', 'bolsonaro', 'felipe davila', 'ciro']
+candidates = ['soraya', 'simone', 'lula', 'bolsonaro', 'felipe', 'ciro']
 
 # Read files
 plan = {}
@@ -49,7 +49,7 @@ stop_words = [
     'nao', 'sim', 'novo', 'proposta', 'federal', 'plano', 'se',
     'bolsenaro', 'importante', 'raya', 'thronicke', 'tebet', 'mara',
     'gabrilli', 'geraldo', 'alckmin', 'tiago', 'mitraud', 'vice',
-    'braga', 'netto', 'ana', 'paula', 'mattos', 'ndo', 'gestdo', 'tanto', 'ao', 'alem', 'além', 'já', 'ja', 'sao', 'são', 'sdo', 'cada', 'país', 'deverá', 'política', 'forma', 'bem', 'mal', 'vamos', 'pessoa', 'deverão', 'projeto', 'público', 'políticas', 'pública', 'públicas', 'públicos', 'implantar', 'meta', 'promover', 'sobretudo', 'toda', 'ss', 'meio'
+    'braga', 'netto', 'ana', 'paula', 'mattos', 'ndo', 'gestdo', 'tanto', 'ao', 'alem', 'além', 'já', 'ja', 'sao', 'são', 'sdo', 'cada', 'país', 'deverá', 'política', 'forma', 'bem', 'mal', 'vamos', 'pessoa', 'deverão', 'projeto', 'público', 'políticas', 'pública', 'públicas', 'públicos', 'implantar', 'meta', 'promover', 'sobretudo', 'toda', 'ss', 'meio', 'promover', 'hoje', 'ainda', 'fim', 'vez', 'desse', 'pro', 'ção', 'dado', 'outros', 'ano', 'nova', 'queremos', 'novos', 'novas'
 ] + candidates + list(string.ascii_lowercase) + stopwords.words('portuguese') + ['(', ')', ';', ':', '[', ']', ',']
 
 
