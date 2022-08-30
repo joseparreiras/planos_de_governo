@@ -19,13 +19,14 @@
 ---
 
 
-## 📝 Table of Contents
+## 📝 ToC
 
-- [Sobre](#about)
-- [Como Funciona?](#working)
-- [Ferramentas](#built_using)
-- [Autor](#authors)
-- [Fontes](#sources)
+- [📝 ToC](#-toc)
+- [🧐 Sobre <a name = "about"></a>](#-sobre-)
+- [💭 Como Funciona? <a name = "working"></a>](#-como-funciona-)
+- [⛏️ Ferramentas <a name = "built_using"></a>](#️-ferramentas-)
+- [✍️ Autor <a name = "authors"></a>](#️-autor-)
+- [💻 Fontes <a name = "sources"></a>](#-fontes-)
 
 ## 🧐 Sobre <a name = "about"></a>
 
