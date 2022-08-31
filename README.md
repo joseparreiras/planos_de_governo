@@ -20,13 +20,13 @@
 
 
 ## 📝 ToC
-
 - [📝 ToC](#-toc)
 - [🧐 Sobre <a name = "about"></a>](#-sobre-)
 - [💭 Como Funciona? <a name = "working"></a>](#-como-funciona-)
 - [⛏️ Ferramentas <a name = "built_using"></a>](#️-ferramentas-)
 - [✍️ Autor <a name = "authors"></a>](#️-autor-)
 - [💻 Fontes <a name = "sources"></a>](#-fontes-)
+- [📸 Imagens <a name = "images"></a>](#-imagens-)
 
 ## 🧐 Sobre <a name = "about"></a>
 
@@ -48,3 +48,35 @@ Através da ferramenta *tesseract* de optical character recognition (OCR), anali
 ## 💻 Fontes <a name = "sources"></a>
 
 - [Planos de Governo](https://www.tecmundo.com.br/mercado/245676-veja-plano-governo-completo-candidatos-presidencia-brasil.htm)
+
+## 📸 Imagens <a name = "images"></a>
+
+<p align="center">
+  <a href="bolsonaro" rel="noopener">
+ <img height=500px src="/imagens/bolsonaro.png" alt="Resumo do plano de governo do candidato Bolsonaro"></a>
+</p>
+
+<p align="center">
+  <a href="lula" rel="noopener">
+ <img height=500px src="/imagens/lula.png" alt="Resumo do plano de governo do candidato Lula"></a>
+</p>
+
+<p align="center">
+  <a href="ciro" rel="noopener">
+ <img height=500px src="/imagens/ciro.png" alt="Resumo do plano de governo do candidato Ciro"></a>
+</p>
+
+<p align="center">
+  <a href="felipe" rel="noopener">
+ <img height=500px src="/imagens/felipe.png" alt="Resumo do plano de governo do candidato Felipe"></a>
+</p>
+
+<p align="center">
+  <a href="simone" rel="noopener">
+ <img height=500px src="/imagens/simone.png" alt="Resumo do plano de governo da candidata Simone"></a>
+</p>
+
+<p align="center">
+  <a href="soraya" rel="noopener">
+ <img height=500px src="/imagens/soraya.png" alt="Resumo do plano de governo da candidata Soraya"></a>
+</p>
