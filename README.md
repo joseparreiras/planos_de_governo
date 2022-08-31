@@ -35,6 +35,7 @@ Análise dos planos de governo dos candidatos a presidência nas eleicões brasi
 ## 💭 Como Funciona? <a name = "working"></a>
 
 Através da ferramenta *tesseract* de optical character recognition (OCR), analiso os planos de governo de cada candidato. A partir disso, construo as imagens retratando as palavras mais comuns em cada arquivo. 
+O arquivo [stop_words.csv](/stop_words.csv) contem as palavras que são desconsideradas da análise.
 
 ## ⛏️ Ferramentas <a name = "built_using"></a>
 
