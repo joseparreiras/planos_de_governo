@@ -2,8 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 from wordcloud import WordCloud
-import string
-from nltk.corpus import stopwords
+import csv
 
 
 def truncate_colormap(cmap, minval=0.0, maxval=1.0, n=100):
@@ -36,21 +35,14 @@ candidates = ['soraya', 'simone', 'lula', 'bolsonaro', 'felipe', 'ciro']
 plan = {}
 
 for x in candidates:
-    file = 'planos/' + x + '.pdf'
-    plan.update({x: pdf_kwd(file)})
+    plan.update({x: pdf_kwd('planos/'+x+'.pdf')})
 
 # Words to drop
-stop_words = [
-    'brasil', 'governo', 'presidente', 'nacional', 'politica',
-    'pais', 'lei', 'leis', 'metas', 'todo', 'publica', 'publico',
-    'maior', 'menor', 'mais', 'menos', 'brasileiro',
-    'brasileira', 'varios', 'nacionais', 'sera', 'estado', 'ao',
-    'deve', 'outra', 'outro', 'sistema', 'programa', 'foco', 'todos',
-    'nao', 'sim', 'novo', 'proposta', 'federal', 'plano', 'se',
-    'bolsenaro', 'importante', 'raya', 'thronicke', 'tebet', 'mara',
-    'gabrilli', 'geraldo', 'alckmin', 'tiago', 'mitraud', 'vice',
-    'braga', 'netto', 'ana', 'paula', 'mattos', 'ndo', 'gestdo', 'tanto', 'ao', 'alem', 'além', 'já', 'ja', 'sao', 'são', 'sdo', 'cada', 'país', 'deverá', 'política', 'forma', 'bem', 'mal', 'vamos', 'pessoa', 'deverão', 'projeto', 'público', 'políticas', 'pública', 'públicas', 'públicos', 'implantar', 'meta', 'promover', 'sobretudo', 'toda', 'ss', 'meio', 'promover', 'hoje', 'ainda', 'fim', 'vez', 'desse', 'pro', 'ção', 'dado', 'outros', 'ano', 'nova', 'queremos', 'novos', 'novas'
-] + candidates + list(string.ascii_lowercase) + stopwords.words('portuguese') + ['(', ')', ';', ':', '[', ']', ',']
+stop_words = []
+with open('stop_words.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        stop_words += row
 
 
 # Mask for WordCloud
@@ -65,5 +57,5 @@ for i, x in enumerate(candidates):
     plt.imshow(cloud, interpolation='bilinear')
     plt.title(x.capitalize())
     plt.axis('off')
-    plt.savefig('imagens/'+x+'.jpeg', dpi=1200,
-                bbox_inches='tight', transparent=False)
+    plt.savefig('imagens/'+x+'.png', dpi=1200,
+                bbox_inches='tight', transparent=True)
